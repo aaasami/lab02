@@ -59,7 +59,7 @@ Student & Student::operator=(const Student &right) {
 
 std::string Student::toString() const {
     std::stringstream oss;
-    oss << "[" << name << ", " << perm << "]";
+    oss << "[" << name << "," << perm << "]";
     return oss.str();
 }
 
