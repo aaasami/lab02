@@ -23,7 +23,7 @@ void StudentRoll::insertAtTail(const Student &s) {
 
 std::string StudentRoll::toString() const {
   std::stringstream res;
-  res << "{";
+  res << "[";
   Node* cur = this->head;
   while (cur != NULL) {
       res << cur->s->toString();
@@ -31,7 +31,7 @@ std::string StudentRoll::toString() const {
       res << ",";
   }
 
-  res << "}";
+  res << "]";
   return res.str();
 }
 
