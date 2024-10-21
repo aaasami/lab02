@@ -28,9 +28,11 @@ std::string StudentRoll::toString() const {
   while (cur != NULL) {
       res << cur->s->toString();
       cur = cur->next;
+      //important to know whether cur != NULL !!!!!!!!!!!!!!!!!!!otherwise "," would cause mistake
+      if(cur != NULL){
       res << ",";
+      }
   }
-
   res << "]";
   return res.str();
 }
